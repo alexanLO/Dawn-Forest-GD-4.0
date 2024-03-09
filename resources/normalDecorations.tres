@@ -1,0 +1,75 @@
+[gd_resource type="TileSet" load_steps=13 format=3 uid="uid://638xhk0u5em3"]
+
+[ext_resource type="Texture2D" uid="uid://dha8erb8s74hc" path="res://assets/tile/decoration/fence_1.png" id="1_7vji5"]
+[ext_resource type="Texture2D" uid="uid://dq6p8apydp6qi" path="res://assets/tile/decoration/fence_2.png" id="2_4sxd7"]
+[ext_resource type="Texture2D" uid="uid://e8bc1j0k6twi" path="res://assets/tile/decoration/lamp.png" id="3_amy2o"]
+[ext_resource type="Texture2D" uid="uid://dox3b30yojk2s" path="res://assets/tile/decoration/rock_1.png" id="4_41n24"]
+[ext_resource type="Texture2D" uid="uid://ci3y1tm7wrpkr" path="res://assets/tile/decoration/rock_2.png" id="5_6r8jl"]
+[ext_resource type="Texture2D" uid="uid://bwpxtcf40q80k" path="res://assets/tile/decoration/rock_3.png" id="6_hdlfc"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m6jik"]
+texture = ExtResource("1_7vji5")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8q25n"]
+texture = ExtResource("2_4sxd7")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hkken"]
+texture = ExtResource("3_amy2o")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n40wx"]
+texture = ExtResource("4_41n24")
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a3cu2"]
+texture = ExtResource("5_6r8jl")
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5y3dg"]
+texture = ExtResource("6_hdlfc")
+2:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+
+[resource]
+sources/0 = SubResource("TileSetAtlasSource_m6jik")
+sources/1 = SubResource("TileSetAtlasSource_8q25n")
+sources/2 = SubResource("TileSetAtlasSource_hkken")
+sources/3 = SubResource("TileSetAtlasSource_n40wx")
+sources/4 = SubResource("TileSetAtlasSource_a3cu2")
+sources/5 = SubResource("TileSetAtlasSource_5y3dg")

@@ -42,3 +42,6 @@ motion_mirroring = Vector2(320, 0)
 offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("4_7buuj")
+
+[node name="Mask" type="CanvasModulate" parent="."]
+color = Color(0.403922, 0.403922, 0.403922, 0.815686)

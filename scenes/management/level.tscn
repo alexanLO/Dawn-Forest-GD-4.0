@@ -30,3 +30,4 @@ tile_set = ExtResource("3_uytip")
 format = 2
 
 [node name="Background" parent="." instance=ExtResource("4_82j1j")]
+can_process = false

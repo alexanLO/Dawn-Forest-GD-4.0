@@ -1,7 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://drvp2ghfagu6j"]
+[gd_scene load_steps=9 format=3 uid="uid://drvp2ghfagu6j"]
 
-[ext_resource type="Script" path="res://script/player/player.gd" id="1_xyj88"]
+[ext_resource type="Script" path="res://scenes/player/player.gd" id="1_ajxmq"]
 [ext_resource type="Texture2D" uid="uid://chjm3nypxwjgc" path="res://assets/player/char_blue.png" id="2_30758"]
+[ext_resource type="Script" path="res://scenes/player/texture.gd" id="3_8f28q"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bpoww"]
+size = Vector2(20, 30.5)
 
 [sub_resource type="Animation" id="Animation_tsd3g"]
 resource_name = "idle"
@@ -84,15 +88,19 @@ _data = {
 }
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
-script = ExtResource("1_xyj88")
-move_speed = 75
+script = ExtResource("1_ajxmq")
+speed = 75
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 14.75)
+shape = SubResource("RectangleShape2D_bpoww")
 
-[node name="Texture" type="Sprite2D" parent="."]
+[node name="Texture" type="Sprite2D" parent="." node_paths=PackedStringArray("animation")]
 texture = ExtResource("2_30758")
 hframes = 8
 vframes = 11
+script = ExtResource("3_8f28q")
+animation = NodePath("../Animation")
 
 [node name="Animation" type="AnimationPlayer" parent="."]
 libraries = {

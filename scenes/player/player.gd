@@ -1,5 +1,5 @@
 extends CharacterBody2D
-class_name Player
+class_name Players
 
 @onready var texture: Sprite2D = get_node("Texture")
 
